@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evalacion Unidad 3 - Ejercicio Uno</title>
+    <link rel="stylesheet" href="/static/css/estilos.css">
+</head>
+<body>
+<div class="displayFlex">
+<h2>Formulario de Notas</h2>
+<form method="POST">
+    <label for="notaUno">Nota 1:</label>
+    <input type="number" name="notaUno"/> <br/>
+    <label for="notaDos">Nota 2:</label>
+    <input type="number" name="notaDos"/> <br/>
+    <label for="notaTres">Nota 3:</label>
+    <input type="number" name="notaTres"/> <br/>
+    <label for="asistencia">Asistencia (%):</label>
+    <input type="number" name="asistencia"/> <br/>
+    <button type="submit" value="Enviar" class="buttonLink">Enviar</button>
+</form>
+
+{% if mensaje %}
+    <p>{{ mensaje }}</p>
+{% endif %}
+<a href="/" class="link">Volver al inicio</a>
+</div>
+</body>
+</html>

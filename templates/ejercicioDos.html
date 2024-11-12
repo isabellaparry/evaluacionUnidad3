@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evalacion Unidad 3 - Ejercicio Dos</title>
+    <link rel="stylesheet" href="/static/css/estilos.css">
+</head>
+<body>
+<div class="displayFlex">
+<h2>Formulario de Nombres</h2>
+<form method="POST">
+    <label for="nombreUno">Nombre 1:</label>
+    <input type="text" name="nombreUno"/> <br/>
+    <label for="nombreDos">Nombre 2:</label>
+    <input type="text" name="nombreDos"/> <br/>
+    <label for="nombreTres">Nombre 3:</label>
+    <input type="text" name="nombreTres"/> <br/>
+
+    <button type="submit" value="Enviar" class="buttonLink">Enviar</button>
+</form>
+
+{% if mensaje %}
+    <p>{{ mensaje }}</p>
+{% endif %}
+<a href="/" class="link">Volver al inicio</a>
+</div>
+</body>
+</html>
